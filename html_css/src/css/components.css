@@ -1,0 +1,103 @@
+@import "variables.css";
+
+/* Education Table */
+.education-table {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.education-table th,
+.education-table td {
+  padding: var(--spacing-md);
+  text-align: left;
+}
+
+.education-table th {
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  font-weight: 500;
+}
+
+.education-table tr:nth-child(even) {
+  background-color: var(--bg-light);
+}
+
+/* Project Cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.project-card {
+  background-color: var(--bg-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: var(--text-primary);
+  padding: var(--spacing-md);
+  margin: 0;
+}
+
+.project-card article {
+  color: var(--text-secondary);
+  padding: 0 var(--spacing-md) var(--spacing-md);
+}
+
+/* Skills List */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.skills-category {
+  background-color: var(--bg-light);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.skills-category h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.skills-category ul {
+  list-style: none;
+}
+
+.skills-category li {
+  padding: var(--spacing-sm) 0;
+  position: relative;
+  padding-left: var(--spacing-lg);
+  color: var(--text-secondary);
+}
+
+.skills-category li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
