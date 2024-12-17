@@ -1,0 +1,14 @@
+@import "variables.css";
+
+footer {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: var(--text-primary);
+  color: var(--bg-white);
+  margin-top: var(--spacing-xl);
+}
+
+footer p {
+  opacity: 0.9;
+  font-size: 0.9rem;
+}

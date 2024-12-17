@@ -1,3 +1,4 @@
+<!-- eslint-disable @html-eslint/indent -->
 <!-- 
 Use headings and paragraphs to divide different sections of the website.
 Use tables to explain your educational qualification.
@@ -9,3 +10,125 @@ Style the entire webpage according to your creativity
 Use all these ways of adding style to your webpage.
 Use CSS selectors when styling your lists and tables.
 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h1>Prinshu Behera</h1>
+        <p class="title">Software Developer</p>
+        <div class="social-links">
+          <a
+            href="https://github.com/prinshukumar22"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/prinshubehera22/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <table class="education-table">
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>B.Tech. Computer Science</td>
+              <td>IIIT Sonepat</td>
+              <td>2021-2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="./assets/urbannest.png" alt="Project 1" />
+            <h3>Urban Nest</h3>
+            <article>
+              A Real Estate Management MERN app which helps you find homes at
+              ease. Successfully integrated fully functional backend build with
+              Node and Express. Implemented authentication using firebase, used
+              NoSQL database MongoDB to store. and fetch data.
+            </article>
+          </div>
+          <div class="project-card">
+            <img src="./assets/promptopia.png" alt="Project 2" />
+            <h3>Promptopia</h3>
+            <article>
+              Full stack CRUD application to create and use unique ChatGPT
+              prompts. Implemented authentication using Next-auth. Learned to
+              create our own REST APIs in the NextJS project.
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div class="skills-category">
+            <h3>Technologies</h3>
+            <ul>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Next.js</li>
+              <li>Express.js</li>
+              <li>Docker</li>
+              <li>MongoDB</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Prinshu Behera. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
