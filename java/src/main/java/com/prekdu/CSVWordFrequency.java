@@ -14,7 +14,7 @@ public class CSVWordFrequency {
     //String filePath = "../../resources/input.csv";
 
     if (inputStream == null) {
-      System.out.println("Error: input.csv file not found in resources folder.");
+      System.out.println("Error: input.csv file not found in resources folder");
       return;
     }
     // Map to store word frequencies

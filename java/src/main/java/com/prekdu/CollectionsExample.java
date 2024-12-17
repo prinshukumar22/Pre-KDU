@@ -21,7 +21,7 @@ public final class CollectionsExample {
         // HashMap to store words as keys and their frequencies as values
         HashMap<String, Integer> wordFrequencyMap = new HashMap<>();
 
-        System.out.println("Enter 10 strings:");
+        System.out.println("Enter 10 strings->");
 
         // Input 10 strings and add them to ArrayList and HashSet
         for (int i = 0; i < 10; i++) {
@@ -37,19 +37,19 @@ public final class CollectionsExample {
         scanner.close();
 
         // Print contents of ArrayList
-        System.out.println("\nContents of the ArrayList:");
+        System.out.println("\nContents of the ArrayList->");
         for (String str : stringList) {
             System.out.println(str);
         }
 
         // Print contents of HashSet
-        System.out.println("\nContents of the HashSet:");
+        System.out.println("\nContents of the HashSet->");
         for (String str : stringSet) {
             System.out.println(str);
         }
 
         // Print contents of HashMap
-        System.out.println("\nContents of the HashMap (Word Frequencies):");
+        System.out.println("\nContents of the HashMap (Word Frequencies)->");
         for (Map.Entry<String, Integer> entry : wordFrequencyMap.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }

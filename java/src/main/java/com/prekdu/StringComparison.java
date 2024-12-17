@@ -14,20 +14,20 @@ public class StringComparison {
         Scanner scanner = new Scanner(System.in);
 
         // Prompt the user to enter the first string
-        System.out.print("Enter the first string: ");
+        System.out.print("Enter the first string-> ");
         String firstString = scanner.nextLine();
 
         // Prompt the user to enter the second string
-        System.out.print("Enter the second string: ");
+        System.out.print("Enter the second string-> ");
         String secondString = scanner.nextLine();
 
         // Calculate and print the length of the first string
         int lengthFirstString = firstString.length();
-        System.out.println("Length of the first string: " + lengthFirstString);
+        System.out.println("Length of the first string= " + lengthFirstString);
 
         // Calculate and print the length of the second string
         int lengthSecondString = secondString.length();
-        System.out.println("Length of the second string: " + lengthSecondString);
+        System.out.println("Length of the second string= " + lengthSecondString);
 
         // Check if the lengths match and print the result
         if (lengthFirstString == lengthSecondString) {
