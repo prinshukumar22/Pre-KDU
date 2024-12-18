@@ -42,7 +42,7 @@ main {
   gap: 1rem;
 }
 
-#form input {
+#form div {
   padding: 12px 16px;
   font-size: 18px;
   color: #111827;
@@ -52,21 +52,6 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   outline: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-#form input:hover {
-  border-color: #6366f1;
-}
-
-#form input:focus {
-  border-color: #6366f1;
-  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
-}
-
-#form input::placeholder {
-  color: #9ca3af;
-  font-size: 16px;
-  font-style: italic;
 }
 
 /* Button section design */
