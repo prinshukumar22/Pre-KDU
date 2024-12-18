@@ -10,3 +10,32 @@ Make sure the “-” button has an id of decrement
 
 The IDs should match or else the tests will fail.
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Simple Counter</h1>
+    </header>
+    <main>
+      <section id="form">
+        <div id="counter-value">0</div>
+      </section>
+      <section id="submit">
+          <button id="decrement">-</button>
+        <button id="increment">+</button>
+      </section>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
