@@ -23,6 +23,7 @@
     "dependencies": {
         "jest": "^29.7.0",
         "ts-node": "^10.9.2",
-        "tsx": "^4.19.2"
+        "tsx": "^4.19.2",
+        "typescipt": "file:"
     }
 }

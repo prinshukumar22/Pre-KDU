@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
+    "html_css": "file:",
     "jest": "^29.7.0"
   }
 }
