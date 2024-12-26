@@ -5,3 +5,38 @@
 
   Export the function findById so that it can be used in the test file.
 */
+import { User } from "./q1";
+
+export function findById(
+  users: User[],
+  id: number,
+  throwErr: boolean = false
+): User | never | undefined {
+  const user = users.find((user) => user.id === id);
+  if (user) {
+    return user;
+  } else if (throwErr) {
+    throw new Error(`User with ID ${id} not found.`);
+  } else {
+    return undefined;
+  }
+}
+
+const sampleUsers: User[] = [
+  { id: 1, name: "Alice", email: "alice@example.com" },
+  { id: 2, name: "Bob", email: "bob@example.com" },
+  { id: 3, name: "Charlie", email: "charlie@example.com" },
+];
+
+try {
+  const user1 = findById(sampleUsers, 1);
+  console.log(user1); 
+  
+  const user2 = findById(sampleUsers, 4);
+  console.log(user2); 
+
+  const user3 = findById(sampleUsers, 4, true);
+  console.log(user3); 
+} catch (error) {
+  console.error(error.message); 
+}
