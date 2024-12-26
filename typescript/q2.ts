@@ -16,3 +16,28 @@
   Export the enum Status, the UserStatus tuple type, and the printUserStatus function.
   So that the code can be tested in the test file.
  */
+
+import { User } from "./q1";
+
+export enum Status {
+  Active = "Active",
+  Inactive = "Inactive",
+  Suspended = "Suspended",
+}
+
+export type UserStatus = [User, Status];
+
+export function printUserStatus(userStatus: UserStatus): void {
+  console.log(`${userStatus[0].name} is currently ${userStatus[1]}.`);
+}
+
+const sampleTuple: UserStatus = [
+  {
+    id: 1,
+    name: "John Doe",
+    email: "john.doe@example.com",
+  },
+  Status.Active,
+];
+
+printUserStatus(sampleTuple);
