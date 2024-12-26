@@ -1,7 +1,9 @@
 package com.prekdu;
+
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
+
 /*
  * Create a basic Java Program that reads a CSV file and prints the top 3 repeated words in the file.
  * The CSV file is in the reosurces folder and the file name is input.csv.
@@ -10,8 +12,9 @@ import java.util.stream.Collectors;
 public class CSVWordFrequency {
   public static void main(String[] args) {
     // Define the path to the CSV file
-    InputStream inputStream = CSVWordFrequency.class.getClassLoader().getResourceAsStream("input.csv");
-    //String filePath = "../../resources/input.csv";
+    InputStream inputStream =
+        CSVWordFrequency.class.getClassLoader().getResourceAsStream("input.csv");
+    // String filePath = "../../resources/input.csv";
 
     if (inputStream == null) {
       System.out.println("Error: input.csv file not found in resources folder");
@@ -40,7 +43,8 @@ public class CSVWordFrequency {
     }
 
     // Sort the word frequencies in descending order and get the top 3
-    List<Map.Entry<String, Integer>> topWords = wordCount.entrySet().stream()
+    List<Map.Entry<String, Integer>> topWords =
+        wordCount.entrySet().stream()
             .sorted((e1, e2) -> e2.getValue().compareTo(e1.getValue()))
             .limit(3)
             .collect(Collectors.toList());
@@ -52,4 +56,3 @@ public class CSVWordFrequency {
     }
   }
 }
-
